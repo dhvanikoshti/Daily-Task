@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './home'
-import Task1 from './Task1.jsx'
+import Task1 from './Task1/Task1.jsx'
 
 function App() {
    
