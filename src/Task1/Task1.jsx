@@ -1,5 +1,5 @@
 import React from 'react'
-import Task1_Component from 'Task1/Task1_Component'
+import Task1_Component from './Task1_Component'
 
 function Task1() {
   return (
