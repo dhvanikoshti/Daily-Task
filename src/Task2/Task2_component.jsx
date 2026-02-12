@@ -2,10 +2,10 @@ function Task2_component(props){
     return(
         <>
         <div className="flex flex-col items-center ">
-            <div className="m-5">
+            <div className="m-10">
                 {<img src={props.img} alt="Image" className=" object-cover border-2 border-gray-400 shadow-md"/>}
             </div>
-            <div className="sm:text-xl text-lg m-4 font-serif text-center">
+            <div className="sm:text-2xl text-xl md:text-2xl lg:text-3xl m-4 font-serif text-center">
                 {props.heading}
             </div> 
             <div className="">
