@@ -5,7 +5,7 @@ function Task2(){
     return(
         <>
         <div className='p-2 py-20 min-h-screen '>
-           <div className='text-sm sm:text-3xl md:text-4xl font-bold text-orange-950 text-shadow-lg/50 text-center p-4'>
+           <div className='text-sm sm:text-3xl md:text-4xl font-bold text-orange-950 text-shadow-lg/40 text-center p-4'>
                 Image Gallery
             </div>
            <div className='grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4'>
@@ -15,16 +15,7 @@ function Task2(){
            </div>
         </div>
         </>
-        // <div className='p-2 py-20 min-h-screen'>
-        //     <div className='text-4xl font-bold text-black text-shadow-lg/20 text-center'>
-        //         Image Gallery
-        //     </div>
-        //     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-7">
-        //         <Task2_Component img="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fE5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D" heading="Nature" />
-        //         <Task2_Component img="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8VHJhdmVsfGVufDB8fDB8fHww" heading="Travel" />
-        //         <Task2_Component img="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fHww" heading="Animal" />
-        //     </div>
-        // </div>
+
     )
 }
 
