@@ -5,7 +5,7 @@ function Task2(){
     return(
         <>
         <div className='p-2 py-20 min-h-screen '>
-           <div className='text-sm sm:text-3xl md:text-4xl font-bold text-orange-950 text-shadow-lg/20 text-center'>
+           <div className='text-sm sm:text-3xl md:text-4xl font-bold text-orange-950 text-shadow-lg/50 text-center p-4'>
                 Image Gallery
             </div>
            <div className='grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4'>
