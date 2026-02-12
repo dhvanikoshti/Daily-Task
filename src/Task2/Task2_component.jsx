@@ -5,7 +5,7 @@ function Task2_component(props){
             <div className="m-5">
                 {<img src={props.img} alt="Image" className=" object-cover border-2 border-gray-400 shadow-md"/>}
             </div>
-            <div className="sm:text-xl text-lg m-4 font-serif text-center">
+            <div className="sm:text-xl text-sm lg:text-2xl m-4 font-serif text-center">
                 {props.heading}
             </div> 
             <div className="">

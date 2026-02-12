@@ -14,8 +14,8 @@ function App() {
     {/* <Home a="1.  " str="Dhvani :)" />  
     <Home a="2.  " str="Esha :)" />   */}
     {/* <Task1 /> */}
-    {/* <Task2/> */}
-    <Day2_Task2 />
+    <Task2/>
+    {/* <Day2_Task2 /> */}
     </>
   )
 }
