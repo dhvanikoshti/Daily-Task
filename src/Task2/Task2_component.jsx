@@ -9,7 +9,7 @@ function Task2_component(props){
                 {props.heading}
             </div> 
             <div className="">
-                <button className='hover:bg-gray-300 hover:border-gray-500 sm:text-sm md:text-xl bg-gray-400 p-2 px-5 rounded-xl border-2 border-gray-500'>Explore</button>
+                <button className='hover:bg-gray-300 hover:border-gray-500 text-sm sm:text-xl   bg-gray-400 p-2 rounded-2xl border-2 border-gray-500'>Explore</button>
             </div>
         </div>
         </>
