@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="text-align:center; font-family: sans-serif; font-size: 40px;">JavaScript String Methods</h1>
+<p id="String"></p>
+
+<ol>
+<h2><li>Length Method</li></h2>
+<p id="Length"></p>
+
+<h2><li>charAt() Method</li></h2>
+<p id="CharAt"></p>
+
+<h2><li>at() Method</li></h2>
+<p id="AtMethod"></p>
+
+<h2><li>Slice() Method</li></h2>
+<p id="Slice1"></p>
+<p id="Slice2"></p>
+
+<h2><li>Substring() Method</li></h2>
+<p id="Substring"></p>
+
+<h2><li>Substr() Method</li></h2>
+<p id="Substr"></p>
+
+<h2><li>Uppercase() Method</li></h2>
+<p id="Uppercase"></p>
+
+<h2><li>Lowercase() Method</li></h2>
+<p id="Lowercase"></p>
+
+<h2><li>Trim() Method</li></h2>
+<p id="Trim"></p>
+
+<h2><li>Repeat() Method</li></h2>
+<p id="Repeat"></p>
+
+<h2><li>Replace() Method</li></h2>
+<p id="Replace"></p>
+
+<h2><li>ReplaceAll() Method</li></h2>
+<p id="ReplaceAll"></p>
+
+<h2><li>Split() Method</li></h2>
+<p id="Split"></p>
+
+<h2><li>PadStart() Method</li></h2>
+<p id="PadStart"></p>
+
+<h2><li>PadEnd() Method</li></h2>
+<p id="PadEnd"></p>
+
+<h2><li>The concat() Method</li></h2>
+<p id="fname">First Name : Dhvani</p>
+<p id="lname">Last Name : Koshti</p>
+<p id="concat"></p>
+
+<h2><li>indexOf() Method</li></h2>
+<p id="indexOf"></p>
+
+<h2><li>LastIndexOf() Method</li></h2>
+<p id="lastIndexOf"></p>
+
+<script>
+
+let str="   Learning JavaScript is INTERESTING and javascript is interesting because JavaScript helps developers build INTERESTING and powerful web applications, and learning javascript again and again makes it more  easy "
+document.getElementById("String").innerHTML = "String : "+str;
+document.getElementById("Length").innerHTML = "Length of String : "+str.length;
+document.getElementById("CharAt").innerHTML = "Character at index 5 : "+str.charAt(5);
+document.getElementById("AtMethod").innerHTML = "Character at index 5 using at() method : "+str.at(5);
+document.getElementById("Slice1").innerHTML = "Slice of String from index 5 to 15 : "+str.slice(5,15);
+document.getElementById("Slice2").innerHTML = "Slice of String from index 195 to end : "+str.slice(195);
+document.getElementById("Substring").innerHTML = "Substring of String from index 10 to 35 : "+str.substring(10,35);
+document.getElementById("Substr").innerHTML = "Substr of String from index 10 to 5 length : "+str.substr(10,5);
+document.getElementById("Uppercase").innerHTML = "String in Uppercase : "+str.toUpperCase();
+document.getElementById("Lowercase").innerHTML = "String in Lowercase : "+str.toLowerCase();
+document.getElementById("Trim").innerHTML = "String after trim : "+str.trim();
+document.getElementById("Repeat").innerHTML = "String repeated 2 times : "+str.repeat(2);
+document.getElementById("Replace").innerHTML = "String after replacing 'JavaScript' with 'JS' : "+str.replace("JavaScript","JS");
+document.getElementById("ReplaceAll").innerHTML = "String after replacing all 'JavaScript' with 'JS' : "+str.replaceAll("JavaScript","JS");
+document.getElementById("Split").innerHTML = "String after splitting by 'JavaScript' : "+str.split("JavaScript");
+document.getElementById("PadStart").innerHTML = "String after padding start: "+str.padStart(220,"+");
+document.getElementById("PadEnd").innerHTML = "String after padding end : "+str.padEnd(220,"+");
+
+let fname = document.getElementById("fname").innerHTML;
+let lname = document.getElementById("lname").innerHTML;
+let merge = fname.concat(" ",lname);
+document.getElementById("concat").innerHTML = merge;
+
+document.getElementById("indexOf").innerHTML = "Index of 'javascript' in String : "+str.indexOf("javascript");
+document.getElementById("lastIndexOf").innerHTML = "Last Index of 'javascript' in String : "+str.lastIndexOf("javascript");
+
+
+
+</script>
+
+</body>
+</html>
+
+
