@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1 style="text-align:center; font-family: sans-serif; font-size: 40px; margin-top: 40px;">JavaScript Array Methods</h1><br/>
+        <hr style="border: 2px solid black;"/>
+        <p id="arr" style="font-size: 20px;"></p><br/>
+        <ol>
+        <h2><li>Length Method</li></h2>
+        <p id="Length"></p>
+
+        <h2><li>Array To String Method</li></h2>
+        <p id="ToString"></p>
+
+        <h2><li>at() Method</li></h2>
+        <p id="AtMethod"></p>
+
+        <h2><li>join() Method</li></h2>
+        <p id="JoinMethod"></p>
+
+        <h2><li>Pop Method</li></h2>
+        <p id="PopMethod"></p>
+        <p id="PopArray"></p>
+
+        <h2><li>Push Method</li></h2>
+        <p id="PushMethod"></p>
+
+        <h2><li>Shift Method</li></h2>
+        <p id="ShiftMethod"></p>
+        <p id="ShiftArray"></p>
+
+        <h2><li>Unshift Method</li></h2>
+        <p id="UnshiftMethod"></p>
+
+        <h2><li>isArray Method</li></h2>
+        <p id="IsArrayMethod"></p>
+
+        <h2><li>Delete Method</li></h2>
+        <p id="DeleteMethod"></p>
+
+        <h2><li>Concate Method</li></h2>
+        <p id="arr2"></p>
+        <p id="ConcatMethod"></p>
+
+        <h2><li>CopyWithin Method</li></h2>
+        <p id="CopyWithinMethod"></p>
+
+        <h2><li>Flat Method</li></h2>
+        <p>2D Array : [1,2,[3,4],[5,6]]</p>
+        <p id="FlatMethod"></p>
+
+        <h2><li>Slice Method</li></h2>
+        <p id="SliceMethod"></p>
+
+        <h2><li>Splice Method</li></h2>
+        <p id="SpliceMethod"></p>
+
+        <h2><li>IndexOf Method</li></h2>
+        <p id="IndexOfMethod"></p>
+
+        <h2><li>LastIndexOf Method</li></h2>
+        <p id="LastIndexOfMethod"></p>
+
+        <h2><li>Includes Method</li></h2>
+        <p id="IncludesMethod"></p>
+
+        <h2><li>find Method</li></h2>
+        <p id="FindMethod"></p>
+
+        <h2><li>FindIndex Method</li></h2>
+        <p id="FindIndexMethod"></p>
+
+        <h2><li>findLast Method</li></h2>
+        <p id="FindLastMethod"></p>
+
+        <h2><li>FindLastIndex Method</li></h2>
+        <p id="FindLastIndexMethod"></p>
+
+        <h2><li>Sort Method</li></h2>
+        <p id="SortMethod"></p>
+
+        <h2><li>Reverse Method</li></h2>
+        <p id="ReverseMethod"></p>
+
+        <h2><li>Numeric Sort Method</li></h2>
+        <p id="NumericSortMethod"></p>
+
+        <h2><li>RandomSort Method</li></h2>
+        <p id="RandomSortMethod"></p>
+
+        <h2><li>Math Min Method</li></h2>
+        <p>Array : [45,76,21,43,23,10,65,05,4]</p>
+        <p id="MathMinMethod"></p>
+
+        <h2><li>Math Max Method</li></h2>
+        <p>Array : [45,76,21,43,23,10,65,05,4]</p>
+        <p id="MathMaxMethod"></p>
+
+        <h2><li>With Method</li></h2>
+        <p id="WithMethod"></p>
+
+        <h2><li>Some Method</li></h2>
+        <p id="SomeMethod"></p>
+
+        <h2><li>Fill Method</li></h2>
+        <p id="FillMethod"></p>
+
+        
+
+        
+
+
+        </ol>
+        <Script>
+        const arr=[45,76,21,43,23,10,65,05,4];
+        document.getElementById("arr").innerHTML=`The array is : ${arr}`;
+        document.getElementById("Length").innerHTML=`The length of the array is : ${arr.length}`;
+        document.getElementById("ToString").innerHTML=`The array as a string is : ${arr.toString()}`;
+        document.getElementById("AtMethod").innerHTML=`The element at index 5 is : ${arr.at(5)}`;
+        document.getElementById("JoinMethod").innerHTML=`The array joined with commas is : ${arr.join(" * ")}`;
+        document.getElementById("PopMethod").innerHTML=`The popped element is : ${arr.pop()}`;
+        document.getElementById("PopArray").innerHTML=`The array after popping is : ${arr}`;
+        arr.push(99);
+        document.getElementById("PushMethod").innerHTML=`The new length of the array after pushing 99 is : ${arr}`;
+        document.getElementById("ShiftMethod").innerHTML=`The shifted element is : ${arr.shift()}`;
+        document.getElementById("ShiftArray").innerHTML=`The array after shifting is : ${arr}`;
+        arr.unshift(100);
+        document.getElementById("UnshiftMethod").innerHTML=`The new length of the array after unshifting 100 is : ${arr}`;
+        document.getElementById("IsArrayMethod").innerHTML=`Is the array an array? : ${Array.isArray(arr)}`;
+        delete arr[2];
+        document.getElementById("DeleteMethod").innerHTML=`The array after deleting element at index 2 is : ${arr}`;
+        const arr2=[1,2,3];
+        const arr3=arr.concat(arr2);
+        document.getElementById("arr2").innerHTML=`The second array is : ${arr2}`;
+        document.getElementById("ConcatMethod").innerHTML=`The concatenated array is : ${arr3}`;
+        document.getElementById("CopyWithinMethod").innerHTML=`The array after copying within is : ${arr.copyWithin(1,2,4)}`;
+        const flatarr=[1,2,[3,4],[5,6]];
+        document.getElementById("FlatMethod").innerHTML=`The flattened array is : ${flatarr.flat()}`;
+        document.getElementById("SliceMethod").innerHTML=`The sliced array from index 2 to 5 is : ${arr.slice(2,5)}`;
+        arr.splice(3,0,"Pen","Pencil")
+        document.getElementById("SpliceMethod").innerHTML=`The spliced array after Adding 2 elements from index 3 ("Pen","Pencil") : ${arr}`;
+        arr.splice(1,2);
+        document.getElementById("SpliceMethod").innerHTML+=`<br/> The spliced array after removing 2 elements from index 1 : ${arr}`;
+        document.getElementById("IndexOfMethod").innerHTML=`The index of element 5 is : ${arr.indexOf(5)}`;
+        document.getElementById("LastIndexOfMethod").innerHTML=`The last index of element 23 is : ${arr.lastIndexOf(23)}`;
+        document.getElementById("IncludesMethod").innerHTML=`Does the array include element 1000? : ${arr.includes(1000)}`;
+        document.getElementById("FindMethod").innerHTML=`The first element greater than 20 is : ${arr.find(element => element > 20)}`;
+        document.getElementById("FindIndexMethod").innerHTML=`The index of the first element greater than 20 is : ${arr.findIndex(element => element > 20)}`;
+        document.getElementById("FindLastMethod").innerHTML=`The last element greater than 20 is : ${arr.findLast(element => element > 20)}`;
+        document.getElementById("FindLastIndexMethod").innerHTML=`The index of the last element greater than 20 is : ${arr.findLastIndex(element => element > 20)}`;
+        document.getElementById("SortMethod").innerHTML=`The sorted array is : ${arr.sort()}`;
+        document.getElementById("ReverseMethod").innerHTML=`The reversed array is : ${arr.reverse()}`;
+        document.getElementById("NumericSortMethod").innerHTML=`The numerically sorted array is : ${arr.sort((a,b) => a-b)}`;
+        document.getElementById("RandomSortMethod").innerHTML=`The randomly sorted array is : ${arr.sort(() => Math.random() - 0.5)}`;
+        minarr=[45,76,21,43,23,10,65,05,4];
+        document.getElementById("MathMinMethod").innerHTML=`The minimum element in the array is : ${Math.min.apply(null, minarr)}`;
+        document.getElementById("MathMaxMethod").innerHTML=`The maximum element in the array is : ${Math.max.apply(null, minarr)}`;
+        document.getElementById("WithMethod").innerHTML=`The array after using with method to change element at index 2 to 999 is : ${arr.with(2,999)}`;
+        document.getElementById("SomeMethod").innerHTML=`Does the array have some elements greater than 50? : ${arr.some(element => element > 50)}`;
+        document.getElementById("FillMethod").innerHTML=`The array created using Array.of method is : ${arr.fill("Filled", 2, 5)}`;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </Script>
+
+        
+
+    </body>
+</html>

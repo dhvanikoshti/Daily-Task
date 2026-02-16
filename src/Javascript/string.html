@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<h1 style="text-align:center; font-family: sans-serif; font-size: 40px;">JavaScript String Methods</h1>
-<p id="String"></p>
-
+<h1 style="text-align:center; font-family: sans-serif; font-size: 40px; margin-top: 40px;">JavaScript String Methods</h1><br/>
+<hr style="border: 2px solid black;"/>
+<p id="String" style="font-size: 20px;"></p><br/>
 <ol>
 <h2><li>Length Method</li></h2>
 <p id="Length"></p>
@@ -63,6 +63,27 @@
 <h2><li>LastIndexOf() Method</li></h2>
 <p id="lastIndexOf"></p>
 
+<h2><li>Search() Method</li></h2>
+<p id="search"></p>
+
+<h2><li>match() Method</li></h2>
+<p id="match"></p>
+
+<h2><li>MatchAll() Method</li></h2>
+<p id="matchAll"></p>
+<p id="matchAll1"></p>
+
+<h2><li>Startwith() Method</li></h2>
+<p id="startsWith"></p>
+
+<h2><li>endwith() Method</li></h2>
+<p id="endsWith"></p>
+
+<h2><li>Includes() Method</li></h2>
+<p id="includes"></p>
+
+</ol>
+
 <script>
 
 let str="   Learning JavaScript is INTERESTING and javascript is interesting because JavaScript helps developers build INTERESTING and powerful web applications, and learning javascript again and again makes it more  easy "
@@ -91,11 +112,15 @@ document.getElementById("concat").innerHTML = merge;
 
 document.getElementById("indexOf").innerHTML = "Index of 'javascript' in String : "+str.indexOf("javascript");
 document.getElementById("lastIndexOf").innerHTML = "Last Index of 'javascript' in String : "+str.lastIndexOf("javascript");
-
-
+document.getElementById("search").innerHTML = "Search for 'javascript' in String : "+str.search("javascript");
+document.getElementById("match").innerHTML = "Match for 'javascript' in String : "+str.match("javascript");
+document.getElementById("matchAll").innerHTML = "MatchAll for 'javascript' in String : "+ Array.from(str.matchAll("javascript"));
+document.getElementById("matchAll1").innerHTML = "MatchAll for 'javascript' in String with case insensitive : "+ Array.from(str.matchAll(/javascript/gi));
+document.getElementById("startsWith").innerHTML = "Does the String start with ' ' : "+str.startsWith("  ");
+document.getElementById("endsWith").innerHTML = "Does the String end with 'more' : "+str.endsWith("easy");
+document.getElementById("includes").innerHTML = "Does the String include 'developers' : "+str.includes("developers");
 
 </script>
-
 </body>
 </html>
 
