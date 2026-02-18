@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -11,11 +11,16 @@ import Task2 from './Task2/Task2.jsx'
 import Day2_Task2 from './Task2/Day2_Task2.jsx'
 import ImageData from './Task3/ImageData.jsx'
 import Navigate from './Task4-Navigation/Navigate.jsx'
-import Home  from "./Task4-Navigation/Pages/Home"
-import About from "./Task4-Navigation/Pages/About" 
+import Home from "./Task4-Navigation/Pages/Home"
+import About from "./Task4-Navigation/Pages/About"
 import Contact from "./Task4-Navigation/Pages/Contact"
 import Profile from "./Task4-Navigation/Pages/Profile"
+import Task5 from "./Task5/Task5.jsx"
+import Usestate from './Task5/Usestate.jsx'
+
 import Mainpage from './Scrollbar-Navigation/Mainpage.jsx'
+
+
 
 import { createContext } from 'react'
 export const UserContext = createContext();
@@ -23,15 +28,19 @@ export const UserContext = createContext();
 
 function App() {
   const str = "Dhvani Koshti"
+  
+  // useEffect(() => {
+  //    console.log("Hello !!") ;
+  //   },);
   return (
     <>
       {/* <Router> */}
-        {/* <Navbar /> */}
-          {/* <UserContext.Provider value={{str}}>
+      {/* <Navbar /> */}
+      {/* <UserContext.Provider value={{str}}>
         <Routes>
             <Route path="/" element={<ImageData />} /> */}
-            {/* <Route path="/menu" element={<Menu />} />  */}
-            {/* <Route path="/contact" element={<Contact />} />
+      {/* <Route path="/menu" element={<Menu />} />  */}
+      {/* <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1> PAGE NOT FOUND</h1>} />
         </Routes>
           </UserContext.Provider>
@@ -51,12 +60,12 @@ function App() {
       {/* <Day2_Task2 /> */}
 
       {/* =============================Task3============================ */}
-      
+
       {/* <ImageData/> */}
 
       {/* =================Task4 (Navigation With Router)================ */}
 
-      <Router> 
+      {/* <Router> 
         <Navigate /> 
         <UserContext.Provider value={{str}}>
         <Routes> 
@@ -67,11 +76,17 @@ function App() {
           <Route path="*" element={<h1> PAGE NOT FOUND</h1>} /> 
         </Routes> 
       </UserContext.Provider>
-      </Router>
+      </Router> */}
 
       {/*============================ Scrollbar Navigation===================*/}
+
       {/* <Mainpage /> */}
-        
+
+      {/*============================ Task 5===================*/}
+      
+      {/* <Task5 /> */}
+      <Usestate/>
+
 
     </>
   )
