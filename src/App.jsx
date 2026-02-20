@@ -17,12 +17,15 @@ import Contact from "./Task4-Navigation/Pages/Contact"
 import Profile from "./Task4-Navigation/Pages/Profile"
 import Task5 from "./Task5/Task5.jsx"
 import Usestate from './Task5/Usestate.jsx'
-
+import Conditional_render from './Task5/Conditional_render.jsx'
+import Useeffect_api from './UseEffect_Api/Useeffect_api.jsx'
 import Mainpage from './Scrollbar-Navigation/Mainpage.jsx'
-
+import NavigatePage from './Crud/NavigatePage.jsx'
+import NavigatePage1 from './Crud_Formik/NavigatePage.jsx'
 
 
 import { createContext } from 'react'
+
 export const UserContext = createContext();
 
 
@@ -47,8 +50,8 @@ function App() {
       </Router> */}
       {/* =============================Props============================ */}
 
-      {/* <Home a="1.  " str="Dhvani :)" />  
-      <Home a="2.  " str="Esha :)" />   */}
+      {/* <Home a="1"  " str="Dhvani :)" />  
+      <Home a="2"  str="Esha :)" />   */}
 
       {/* =============================Task1============================ */}
 
@@ -85,8 +88,15 @@ function App() {
       {/*============================ Task 5===================*/}
       
       {/* <Task5 /> */}
-      <Usestate/>
-
+      {/* <Usestate/> */}
+      {/* <Conditional_render/> */}
+        {/* <Useeffect_api/> */}
+      {/* <Registration/> */}
+      {/* <Login/> */}
+      {/* <Dashboard/> */}
+        {/* <CrudRoutes /> */}
+        {/* <NavigatePage /> */}
+        <NavigatePage1 />
 
     </>
   )
